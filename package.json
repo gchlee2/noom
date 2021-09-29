@@ -18,5 +18,8 @@
     "nodemon": "^2.0.12",
     "pug": "^3.0.2",
     "ws": "^8.2.2"
+  },
+  "dependencies": {
+    "socket.io": "^4.2.0"
   }
 }
