@@ -97,5 +97,6 @@ wss.on("connection", (socket) => {
     }
   });
 }); */
-const handleListen = () => console.log(`Listening on http://localhost:3000`);
+console.log(process.env.PORT);
+const handleListen = () => console.log(`Listening on http://localhost:3000  or https://plecon.herokuapp.com/`);
 httpServer.listen(process.env.PORT || 3000, handleListen);
