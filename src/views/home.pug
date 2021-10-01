@@ -6,6 +6,7 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Noom
         link(rel="stylesheet", href="https://unpkg.com/mvp.css")
+        link(rel="stylesheet", href="/public/css/home.css")
         script(defer src="/socket.io/socket.io.js") 
         script(defer src="/public/js/app.js")
     body
@@ -16,6 +17,7 @@ html(lang="en")
                 form#nickForm
                     input(placeholder="nickname", required, type="text")
                     button Save              
+                br
                 form#enterForm
                     input(type="text", required, placeholder="room name")
                     button Enter Room 
@@ -23,10 +25,12 @@ html(lang="en")
                 ul 
             div#room
                 h3
-                ul              
+                div.chatArea
+                    ul              
                 form
                     input(placeholder="message", required, type="text")
                     button Send
+                button#btnLeaveRoom 방나가기
 
 
         
