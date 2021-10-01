@@ -98,4 +98,4 @@ wss.on("connection", (socket) => {
   });
 }); */
 const handleListen = () => console.log(`Listening on http://localhost:3000`);
-httpServer.listen(3000, handleListen);
+httpServer.listen(process.env.PORT || 3000, handleListen);
